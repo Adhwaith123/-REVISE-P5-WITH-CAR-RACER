@@ -1,6 +1,6 @@
 var ball;
 var track;
-var ObstaclesGroup = createGroup();
+// var ObstaclesGroup = createGroup();
 // var database,position;
 
 function preload(){
@@ -45,7 +45,7 @@ if(keyDown(UP_ARROW)){
 //     ball.velocity.y = -5;
 //      ball.velocity.x = 3;
 //    }
-spawnObstacles();
+// spawnObstacles();
     drawSprites();
 }
 
@@ -72,14 +72,14 @@ spawnObstacles();
     
 //     }
 
-function spawnObstacles() {
-  if(World.frameCount % 60 === 0) {
-    var obstacle = createSprite(400,365,10,40);
+// function spawnObstacles() {
+//   if(World.frameCount % 60 === 0) {
+//     var obstacle = createSprite(400,365,10,40);
    
-    var rand = randomNumber(1,6);
-    obstacle.setAnimation("obstacle" + rand);
-    obstacle.scale = 0.5;
-    obstacle.lifetime = 70;
-    ObstaclesGroup.add(obstacle);
-  }
-}
+//     var rand = randomNumber(1,6);
+//     obstacle.setAnimation("obstacle" + rand);
+//     obstacle.scale = 0.5;
+//     obstacle.lifetime = 70;
+//     ObstaclesGroup.add(obstacle);
+//   }
+// }
